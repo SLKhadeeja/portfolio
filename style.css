@@ -14,6 +14,10 @@ body {
   background-color: var(--navyBlue);
 }
 
+a {
+  text-decoration: none;
+}
+
 .career-location {
   font-weight: 100;
   font-size: 1.2em;
@@ -82,16 +86,24 @@ p {
    margin: 50px 0;
 }
 
-.nav-list > li > i {
+.nav-list > li {
+  list-style: none;
+}
+
+.nav-list > li > a > i {
   color: var(--primaryColor);
 }
 
-.nav-list > li {
+.nav-list > li > a {
   width: calc(100% - 40px);
   display: flex;
   justify-content: space-between;
   padding: 20px;
   font-size: 1.2em;
+}
+
+.nav-list > li > a > p {
+  color: var(--white);
 }
 
 .footer-profiles {
